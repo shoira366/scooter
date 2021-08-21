@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Space Mono', monospace;
+  overflow: scroll;
 }
 
 p {
@@ -83,9 +84,8 @@ a {
 }
 
 .btn-header {
-  width: 180px;
-  height: 53px;
   margin-left: auto;
+  max-width: 100%;
 }
 
 .menu-div {
@@ -159,12 +159,13 @@ a {
 }
 
 .intro {
+  width: 100%;
   height: 650px;
   padding-top: 153px;
   background-image: url("../images/line.svg"), url("../images/strelka.svg"), url("../images/motorbike.png");
   background-repeat: no-repeat;
   background-size: 203px, 447px 138px, cover;
-  background-position: left, right 34% top 68%;
+  background-position: left, right 34% top 68%, center center;
 }
 
 .intro__title {
@@ -194,6 +195,28 @@ a {
   margin-left: 57px;
 }
 
+@media screen and (max-width: 1149px) {
+  .intro {
+    background-image: url("../images/motorbike.png");
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1146px) {
+  .intro {
+    background-image: url("../images/motorbike.png");
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .intro {
+    width: 100%;
+    background-image: url("../images/motorbike.png");
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .intro {
     background-image: url("../images/strelka.svg"), url("../images/motorbike-tablet.png");
@@ -221,6 +244,13 @@ a {
   }
 }
 
+@media screen and (max-width: 411px) {
+  .intro {
+    background-image: url("../images/motorbike-tablet.png");
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .intro {
     background-image: url("../images/vector.svg"), url("../images/motorbike-mobile.png");
@@ -239,11 +269,12 @@ a {
 
 .guide {
   margin-top: 160px;
+  margin-bottom: 200px;
 }
 
 .guide__line {
   z-index: -1;
-  width: 974px;
+  width: 980px;
   height: 15px;
   background-color: #E5ECF4;
   border: none;
@@ -277,6 +308,7 @@ a {
   line-height: 25px;
   color: #939CAA;
   width: 350px;
+  max-width: 100%;
 }
 
 .first-item::before {
@@ -307,6 +339,12 @@ a {
   background-image: url("../images/enjoy-scooter.svg");
   background-repeat: no-repeat;
   background-size: 96px 96px;
+}
+
+@media screen and (max-width: 1107px) {
+  .guide__line {
+    width: 780px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -340,15 +378,34 @@ a {
   }
 }
 
+@media screen and (max-width: 633px) {
+  .guide__line {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 564px) {
   .guide__list--item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  .guide__list--text {
+    text-align: center;
+  }
+  .guide-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
   }
 }
 
 @media screen and (max-width: 375px) {
+  .guide {
+    margin-bottom: 0;
+  }
   .guide__line {
     display: none;
   }
@@ -406,6 +463,253 @@ a {
     background-repeat: no-repeat;
     background-size: 56px 56px;
     margin-bottom: 24px;
+  }
+}
+
+.good-sides {
+  position: relative;
+  background-image: url("../images/right-strelka.svg");
+  background-size: 740px 150px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-bottom: 160px;
+  overflow-x: hidden;
+}
+
+.good-sides::after {
+  position: absolute;
+  top: 0%;
+  right: -21%;
+  content: "";
+  width: 445px;
+  height: 445px;
+  display: inline-block;
+  background: #E5ECF4;
+  border-radius: 50%;
+}
+
+.good-sides__wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.good-sides__box {
+  margin-right: 220px;
+}
+
+.good-sides__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  width: 445px;
+  margin-bottom: 24px;
+}
+
+.good-sides__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  width: 445px;
+  margin-bottom: 40px;
+}
+
+.money-img {
+  border-radius: 50%;
+}
+
+.good-sides-third {
+  position: relative;
+  background-image: url("../images/right-strelka.svg");
+  background-size: 740px 150px;
+  background-repeat: no-repeat;
+  background-position: right -45% top 28%;
+  margin-bottom: 329px;
+  overflow-x: hidden;
+}
+
+.good-sides-third::after {
+  position: absolute;
+  top: 0%;
+  right: -21%;
+  content: "";
+  width: 445px;
+  height: 445px;
+  display: inline-block;
+  background: #E5ECF4;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .good-sides {
+    position: relative;
+    background-image: url("../images/right-strelka.svg");
+    background-size: 740px 150px;
+    background-repeat: no-repeat;
+    background-position: right top 43%;
+    margin-bottom: 128px;
+  }
+  .good-sides::after {
+    position: absolute;
+    top: 0%;
+    right: -44%;
+    content: "";
+    width: 445px;
+    height: 445px;
+    display: inline-block;
+    background: #E5ECF4;
+    border-radius: 50%;
+  }
+  .good-sides__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .good-sides__box {
+    margin-right: 0;
+    margin-top: 56px;
+  }
+  .good-sides__title {
+    text-align: center;
+  }
+  .good-sides__text {
+    text-align: center;
+  }
+  .btn-good-sides {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    height: 53px;
+  }
+  .good-sides-third {
+    margin-bottom: 104px;
+    position: relative;
+    background-image: url("../images/right-strelka.svg");
+    background-size: 740px 150px;
+    background-repeat: no-repeat;
+    background-position: right -45% top 28%;
+    margin-bottom: 329px;
+  }
+  .good-sides-third::after {
+    position: absolute;
+    top: 0%;
+    right: -44%;
+    content: "";
+    width: 445px;
+    height: 445px;
+    display: inline-block;
+    background: #E5ECF4;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .good-sides {
+    margin-top: 83px;
+    margin-bottom: 120px;
+  }
+  .good-sides::after {
+    position: absolute;
+    top: 0%;
+    right: -21%;
+    content: "";
+    width: 445px;
+    height: 445px;
+    display: inline-block;
+    background: #E5ECF4;
+    border-radius: 50%;
+    display: none;
+  }
+  .good-sides__img {
+    width: 311px;
+    height: 311px;
+  }
+  .good-sides__title {
+    font-size: 32px;
+    line-height: 32px;
+    width: 311px;
+    margin-bottom: 32px;
+  }
+  .good-sides__text {
+    width: 311px;
+    margin-bottom: 32px;
+  }
+  .good-sides-third {
+    margin-bottom: 120px;
+  }
+  .good-sides-third::after {
+    display: none;
+  }
+  .money-img {
+    width: 311px;
+    height: 311px;
+  }
+}
+
+.good-sides-second {
+  background-image: url("../images/city-syrelka.svg");
+  background-size: 735px 138px;
+  background-repeat: no-repeat;
+  background-position: left -43% top;
+  margin-bottom: 160px;
+}
+
+.good-sides-second__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.good-sides-second__wrapper::before {
+  position: absolute;
+  top: 3%;
+  left: -50%;
+  content: "";
+  width: 445px;
+  height: 445px;
+  background: #E5ECF4;
+  border-radius: 50%;
+}
+
+.good-sides-second__box {
+  margin-left: 220px;
+}
+
+@media screen and (max-width: 768px) {
+  .good-sides-second {
+    background-image: url("../images/city-syrelka.svg");
+    background-size: 735px 138px;
+    background-repeat: no-repeat;
+    background-position: left -43% top;
+    margin-bottom: 128px;
+  }
+  .good-sides-second__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .good-sides-second__box {
+    margin-left: 0;
+    margin-top: 56px;
+  }
+  .good-sides-second__title {
+    text-align: center;
+  }
+  .good-sides-second__text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .good-sides-second {
+    margin-bottom: 120px;
+  }
+  .good-sides-second__wrapper::before {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

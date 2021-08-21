@@ -1,0 +1,208 @@
+.good-sides {
+    position: relative;
+    background-image: url('../images/right-strelka.svg');
+    background-size: 740px 150px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin-bottom: 160px;
+    overflow-x: hidden;
+
+    &::after {
+        position: absolute;
+        top: 0%;
+        right: -21%;
+        content: "";
+        width: 445px;
+        height: 445px;
+        display: inline-block;
+        background: #E5ECF4;
+        border-radius: 50%;
+
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        // margin-bottom: 160px;
+
+    }
+
+
+
+
+
+    &__box {
+        margin-right: 220px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+        width: 445px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        width: 445px;
+        margin-bottom: 40px;
+    }
+}
+
+.money-img {
+    border-radius: 50%;
+}
+
+.good-sides-third {
+    position: relative;
+    background-image: url('../images/right-strelka.svg');
+    background-size: 740px 150px;
+    background-repeat: no-repeat;
+    background-position: right -45% top 28%;
+    margin-bottom: 329px;
+    overflow-x: hidden;
+
+    &::after {
+        position: absolute;
+        top: 0%;
+        right: -21%;
+        content: "";
+        width: 445px;
+        height: 445px;
+        display: inline-block;
+        background: #E5ECF4;
+        border-radius: 50%;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .good-sides {
+        position: relative;
+        background-image: url('../images/right-strelka.svg');
+        background-size: 740px 150px;
+        background-repeat: no-repeat;
+        background-position: right top 43%;
+        margin-bottom: 128px;
+
+        &::after {
+            position: absolute;
+            top: 0%;
+            right: -44%;
+            content: "";
+            width: 445px;
+            height: 445px;
+            display: inline-block;
+            background: #E5ECF4;
+            border-radius: 50%;
+
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__box {
+            margin-right: 0;
+            margin-top: 56px;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+
+    .btn-good-sides {
+        display: block;
+        margin: 0 auto;
+        width: 180px;
+        height: 53px;
+    }
+
+    .good-sides-third {
+        margin-bottom: 104px;
+        position: relative;
+        background-image: url('../images/right-strelka.svg');
+        background-size: 740px 150px;
+        background-repeat: no-repeat;
+        background-position: right -45% top 28%;
+        margin-bottom: 329px;
+
+        &::after {
+            position: absolute;
+            top: 0%;
+            right: -44%;
+            content: "";
+            width: 445px;
+            height: 445px;
+            display: inline-block;
+            background: #E5ECF4;
+            border-radius: 50%;
+
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .good-sides {
+        margin-top: 83px;
+        margin-bottom: 120px;
+
+        &::after {
+            position: absolute;
+            top: 0%;
+            right: -21%;
+            content: "";
+            width: 445px;
+            height: 445px;
+            display: inline-block;
+            background: #E5ECF4;
+            border-radius: 50%;
+            display: none;
+        }
+
+        &__img {
+            width: 311px;
+            height: 311px;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 32px;
+            width: 311px;
+            margin-bottom: 32px;
+        }
+
+        &__text {
+            width: 311px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .good-sides-third {
+        margin-bottom: 120px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .money-img {
+        width: 311px;
+        height: 311px;
+    }
+}

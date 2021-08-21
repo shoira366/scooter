@@ -1,9 +1,10 @@
 .guide {
     margin-top: 160px;
+    margin-bottom: 200px;
 
     &__line {
         z-index: -1;
-        width: 974px;
+        width: 980px;
         height: 15px;
         background-color: #E5ECF4;
         border: none;
@@ -38,6 +39,7 @@
             line-height: 25px;
             color: #939CAA;
             width: 350px;
+            max-width: 100%;
         }
     }
 }
@@ -73,6 +75,14 @@
     background-image: url('../images/enjoy-scooter.svg');
     background-repeat: no-repeat;
     background-size: 96px 96px;
+}
+
+@media screen and (max-width:1107px) {
+    .guide{
+        &__line{
+            width: 780px;
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -111,6 +121,14 @@
     }
 }
 
+@media screen and (max-width:633px) {
+    .guide{
+        &__line{
+           display: none; 
+        }
+    }
+}
+
 @media screen and (max-width:564px) {
     .guide {
         &__list {
@@ -118,13 +136,24 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
             }
+            &--text{
+                text-align: center;
+            }
+        }
+        &-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
         }
     }
 }
 
 @media screen and (max-width:375px) {
     .guide {
+        margin-bottom: 0;
         &__line {
             display: none;
         }

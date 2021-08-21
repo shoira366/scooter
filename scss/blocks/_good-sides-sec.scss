@@ -1,0 +1,66 @@
+.good-sides-second {
+    background-image: url('../images/city-syrelka.svg');
+    background-size: 735px 138px;
+    background-repeat: no-repeat;
+    background-position: left -43% top;
+    margin-bottom: 160px;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    &__wrapper::before {
+        position: absolute;
+        top: 3%;
+        left: -50%;
+        content: "";
+        width: 445px;
+        height: 445px;
+        background: #E5ECF4;
+        border-radius: 50%;
+    }
+
+    &__box {
+        margin-left: 220px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .good-sides-second {
+        background-image: url('../images/city-syrelka.svg');
+        background-size: 735px 138px;
+        background-repeat: no-repeat;
+        background-position: left -43% top;
+        margin-bottom: 128px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__box {
+            margin-left: 0;
+            margin-top: 56px;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .good-sides-second{
+        margin-bottom: 120px;
+        &__wrapper::before{
+            display: none;
+        }
+    }
+}
