@@ -1,5 +1,4 @@
 .good-sides-second {
-    position: relative;
     // background-image: url('../images/city-syrelka.svg');
     // background-size: 735px 138px;
     // background-repeat: no-repeat;
@@ -38,7 +37,6 @@
 
 @media screen and (max-width:768px) {
     .good-sides-second {
-        position: relative;
         // background-image: url('../images/city-syrelka.svg');
         // background-size: 735px 138px;
         // background-repeat: no-repeat;
@@ -46,6 +44,7 @@
         margin-bottom: 128px;
 
         &__wrapper {
+            position: relative;
             display: flex;
             flex-direction: column-reverse;
         }
@@ -74,7 +73,13 @@
     .good-sides-second{
         margin-bottom: 120px;
         &__wrapper::before{
+            position: relative;
             display: none;
         }
+    }
+    .left-strelka{
+        position: absolute;
+        left: -160%;
+    top: 3%;
     }
 }

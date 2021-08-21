@@ -12,9 +12,59 @@
         margin-left: auto;
         display: flex;
         align-items: center;
-        &--link{
+
+        &--link {
             display: block;
             margin-right: 24px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-left: 58px;
+
+        &--item {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            margin-right: 32px;
+        }
+
+        &--link {
+            color: #939CAA;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .footer {
+        padding-top: 64px;
+
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__link {
+            margin-bottom: 41px;
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+            margin-bottom: 85px;
+            &--item{
+                margin-bottom: 16px;
+                margin-right: 0;
+            }
+        }
+        &__box{
+            margin: 0 auto;
         }
     }
 }

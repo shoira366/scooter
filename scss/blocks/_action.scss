@@ -58,3 +58,23 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width:375px) {
+    .action {
+        &__title {
+            width: 311px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+
+    .app {
+        width: 114px;
+        height: 40px;
+    }
+
+    .play {
+        width: 130px;
+        height: 40px;
+    }
+}
