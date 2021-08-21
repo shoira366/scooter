@@ -1,9 +1,5 @@
 .good-sides {
     position: relative;
-    // background-image: url('../images/right-strelka.svg');
-    // background-size: 740px 150px;
-    // background-repeat: no-repeat;
-    // background-position: right bottom;
     margin-bottom: 160px;
     overflow-x: hidden;
 
@@ -26,8 +22,6 @@
         display: flex;
         align-items: center;
         z-index: 1;
-        // margin-bottom: 160px;
-
     }
 
 
@@ -68,10 +62,6 @@
 
 .good-sides-third {
     position: relative;
-    // background-image: url('../images/right-strelka.svg');
-    // background-size: 740px 150px;
-    // background-repeat: no-repeat;
-    // background-position: right -45% top 28%;
     margin-bottom: 329px;
     overflow-x: hidden;
 
@@ -115,10 +105,6 @@
 @media screen and (max-width:768px) {
     .good-sides {
         position: relative;
-        // background-image: url('../images/right-strelka.svg');
-        // background-size: 740px 150px;
-        // background-repeat: no-repeat;
-        // background-position: right top 43%;
         margin-bottom: 128px;
 
         &::after {
