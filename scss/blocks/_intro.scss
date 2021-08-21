@@ -9,15 +9,15 @@
     background-position: left, right 34% top 68%, center center;
 
 
-
     &__title {
         font-style: normal;
         font-weight: bold;
         font-size: 56px;
         line-height: 56px;
         letter-spacing: -2.5px;
-        color: #FFFFFF;
+        color: #fff;
         width: 500px;
+        max-width: 100%;
         margin-bottom: 40px;
         margin-top: 0;
     }
@@ -29,6 +29,7 @@
         line-height: 25px;
         color: #FFFFFF;
         width: 405px;
+        max-width: 100%;
         margin-bottom: 40px;
         margin-left: 57px;
     }

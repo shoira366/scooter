@@ -5,6 +5,7 @@
     &__line {
         z-index: -1;
         width: 980px;
+        max-width: 100%;
         height: 15px;
         background-color: #E5ECF4;
         border: none;
@@ -78,8 +79,8 @@
 }
 
 @media screen and (max-width:1107px) {
-    .guide{
-        &__line{
+    .guide {
+        &__line {
             width: 780px;
         }
     }
@@ -122,9 +123,9 @@
 }
 
 @media screen and (max-width:633px) {
-    .guide{
-        &__line{
-           display: none; 
+    .guide {
+        &__line {
+            display: none;
         }
     }
 }
@@ -138,11 +139,13 @@
                 align-items: center;
                 justify-content: center;
             }
-            &--text{
+
+            &--text {
                 text-align: center;
             }
         }
-        &-box{
+
+        &-box {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -154,27 +157,31 @@
 @media screen and (max-width:375px) {
     .guide {
         margin-bottom: 0;
+
         &__line {
             display: none;
         }
-        &-box{
+
+        &-box {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-left: 0;
             margin-bottom: 48px;
         }
-        &-box:last-child{
+
+        &-box:last-child {
             margin-bottom: 0;
         }
 
         &__list {
-            &--item{
+            &--item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
             }
+
             &--title {
                 font-size: 20px;
                 line-height: 28px;
@@ -187,35 +194,37 @@
             }
         }
     }
+
     .first-item::before {
         content: "";
         width: 56px;
         height: 56px;
         display: inline-block;
-    
+
         background-image: url('../images/mobilephone.svg');
         background-repeat: no-repeat;
         background-size: 56px 56px;
         margin-bottom: 24px;
     }
+
     .second-item::before {
         content: "";
         width: 56px;
         height: 56px;
         display: inline-block;
-    
+
         background-image: url('../images/scooter.svg');
         background-repeat: no-repeat;
         background-size: 56px 56px;
         margin-bottom: 24px;
     }
-    
+
     .third-item::before {
         content: "";
         width: 56px;
         height: 56px;
         display: inline-block;
-    
+
         background-image: url('../images/enjoy-scooter.svg');
         background-repeat: no-repeat;
         background-size: 56px 56px;

@@ -1,8 +1,9 @@
 .good-sides-second {
-    background-image: url('../images/city-syrelka.svg');
-    background-size: 735px 138px;
-    background-repeat: no-repeat;
-    background-position: left -43% top;
+    position: relative;
+    // background-image: url('../images/city-syrelka.svg');
+    // background-size: 735px 138px;
+    // background-repeat: no-repeat;
+    // background-position: left -43% top;
     margin-bottom: 160px;
 
     &__wrapper {
@@ -28,12 +29,20 @@
     }
 }
 
+.left-strelka{
+    position: absolute;
+    left: -51%;
+    top: 1%;
+}
+
+
 @media screen and (max-width:768px) {
     .good-sides-second {
-        background-image: url('../images/city-syrelka.svg');
-        background-size: 735px 138px;
-        background-repeat: no-repeat;
-        background-position: left -43% top;
+        position: relative;
+        // background-image: url('../images/city-syrelka.svg');
+        // background-size: 735px 138px;
+        // background-repeat: no-repeat;
+        // background-position: left -43% top;
         margin-bottom: 128px;
 
         &__wrapper {
@@ -53,6 +62,11 @@
         &__text {
             text-align: center;
         }
+    }
+    .left-strelka{
+        position: absolute;
+        left: -58%;
+        top: 1%;
     }
 }
 

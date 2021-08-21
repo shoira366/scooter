@@ -1,9 +1,9 @@
 .good-sides {
     position: relative;
-    background-image: url('../images/right-strelka.svg');
-    background-size: 740px 150px;
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    // background-image: url('../images/right-strelka.svg');
+    // background-size: 740px 150px;
+    // background-repeat: no-repeat;
+    // background-position: right bottom;
     margin-bottom: 160px;
     overflow-x: hidden;
 
@@ -17,6 +17,7 @@
         display: inline-block;
         background: #E5ECF4;
         border-radius: 50%;
+        z-index: -1;
 
     }
 
@@ -44,6 +45,7 @@
         letter-spacing: -2.14286px;
         color: #495567;
         width: 445px;
+        max-width: 100%;
         margin-bottom: 24px;
     }
 
@@ -55,6 +57,7 @@
         color: #939CAA;
         width: 445px;
         margin-bottom: 40px;
+        max-width: 100%;
     }
 }
 
@@ -64,10 +67,10 @@
 
 .good-sides-third {
     position: relative;
-    background-image: url('../images/right-strelka.svg');
-    background-size: 740px 150px;
-    background-repeat: no-repeat;
-    background-position: right -45% top 28%;
+    // background-image: url('../images/right-strelka.svg');
+    // background-size: 740px 150px;
+    // background-repeat: no-repeat;
+    // background-position: right -45% top 28%;
     margin-bottom: 329px;
     overflow-x: hidden;
 
@@ -81,17 +84,29 @@
         display: inline-block;
         background: #E5ECF4;
         border-radius: 50%;
-
+        z-index: -1;
     }
+}
+
+.right-strelka {
+    position: absolute;
+    top: 20%;
+    right: -25%;
+}
+
+.strelka {
+    position: absolute;
+    top: 66%;
+    right: 0%;
 }
 
 @media screen and (max-width:768px) {
     .good-sides {
         position: relative;
-        background-image: url('../images/right-strelka.svg');
-        background-size: 740px 150px;
-        background-repeat: no-repeat;
-        background-position: right top 43%;
+        // background-image: url('../images/right-strelka.svg');
+        // background-size: 740px 150px;
+        // background-repeat: no-repeat;
+        // background-position: right top 43%;
         margin-bottom: 128px;
 
         &::after {
@@ -126,6 +141,18 @@
         }
     }
 
+    .right-strelka {
+        position: absolute;
+        top: 11%;
+        right: -49%;
+    }
+
+    .strelka {
+        position: absolute;
+        top: 36%;
+        right: 0%;
+    }
+
     .btn-good-sides {
         display: block;
         margin: 0 auto;
@@ -136,11 +163,6 @@
     .good-sides-third {
         margin-bottom: 104px;
         position: relative;
-        background-image: url('../images/right-strelka.svg');
-        background-size: 740px 150px;
-        background-repeat: no-repeat;
-        background-position: right -45% top 28%;
-        margin-bottom: 329px;
 
         &::after {
             position: absolute;

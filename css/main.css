@@ -174,8 +174,9 @@ a {
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -2.5px;
-  color: #FFFFFF;
+  color: #fff;
   width: 500px;
+  max-width: 100%;
   margin-bottom: 40px;
   margin-top: 0;
 }
@@ -187,6 +188,7 @@ a {
   line-height: 25px;
   color: #FFFFFF;
   width: 405px;
+  max-width: 100%;
   margin-bottom: 40px;
   margin-left: 57px;
 }
@@ -275,6 +277,7 @@ a {
 .guide__line {
   z-index: -1;
   width: 980px;
+  max-width: 100%;
   height: 15px;
   background-color: #E5ECF4;
   border: none;
@@ -468,10 +471,6 @@ a {
 
 .good-sides {
   position: relative;
-  background-image: url("../images/right-strelka.svg");
-  background-size: 740px 150px;
-  background-repeat: no-repeat;
-  background-position: right bottom;
   margin-bottom: 160px;
   overflow-x: hidden;
 }
@@ -486,6 +485,7 @@ a {
   display: inline-block;
   background: #E5ECF4;
   border-radius: 50%;
+  z-index: -1;
 }
 
 .good-sides__wrapper {
@@ -506,6 +506,7 @@ a {
   letter-spacing: -2.14286px;
   color: #495567;
   width: 445px;
+  max-width: 100%;
   margin-bottom: 24px;
 }
 
@@ -517,6 +518,7 @@ a {
   color: #939CAA;
   width: 445px;
   margin-bottom: 40px;
+  max-width: 100%;
 }
 
 .money-img {
@@ -525,10 +527,6 @@ a {
 
 .good-sides-third {
   position: relative;
-  background-image: url("../images/right-strelka.svg");
-  background-size: 740px 150px;
-  background-repeat: no-repeat;
-  background-position: right -45% top 28%;
   margin-bottom: 329px;
   overflow-x: hidden;
 }
@@ -543,15 +541,24 @@ a {
   display: inline-block;
   background: #E5ECF4;
   border-radius: 50%;
+  z-index: -1;
+}
+
+.right-strelka {
+  position: absolute;
+  top: 20%;
+  right: -25%;
+}
+
+.strelka {
+  position: absolute;
+  top: 66%;
+  right: 0%;
 }
 
 @media screen and (max-width: 768px) {
   .good-sides {
     position: relative;
-    background-image: url("../images/right-strelka.svg");
-    background-size: 740px 150px;
-    background-repeat: no-repeat;
-    background-position: right top 43%;
     margin-bottom: 128px;
   }
   .good-sides::after {
@@ -579,6 +586,16 @@ a {
   .good-sides__text {
     text-align: center;
   }
+  .right-strelka {
+    position: absolute;
+    top: 11%;
+    right: -49%;
+  }
+  .strelka {
+    position: absolute;
+    top: 36%;
+    right: 0%;
+  }
   .btn-good-sides {
     display: block;
     margin: 0 auto;
@@ -588,11 +605,6 @@ a {
   .good-sides-third {
     margin-bottom: 104px;
     position: relative;
-    background-image: url("../images/right-strelka.svg");
-    background-size: 740px 150px;
-    background-repeat: no-repeat;
-    background-position: right -45% top 28%;
-    margin-bottom: 329px;
   }
   .good-sides-third::after {
     position: absolute;
@@ -651,10 +663,7 @@ a {
 }
 
 .good-sides-second {
-  background-image: url("../images/city-syrelka.svg");
-  background-size: 735px 138px;
-  background-repeat: no-repeat;
-  background-position: left -43% top;
+  position: relative;
   margin-bottom: 160px;
 }
 
@@ -680,12 +689,15 @@ a {
   margin-left: 220px;
 }
 
+.left-strelka {
+  position: absolute;
+  left: -51%;
+  top: 1%;
+}
+
 @media screen and (max-width: 768px) {
   .good-sides-second {
-    background-image: url("../images/city-syrelka.svg");
-    background-size: 735px 138px;
-    background-repeat: no-repeat;
-    background-position: left -43% top;
+    position: relative;
     margin-bottom: 128px;
   }
   .good-sides-second__wrapper {
@@ -702,6 +714,11 @@ a {
   .good-sides-second__text {
     text-align: center;
   }
+  .left-strelka {
+    position: absolute;
+    left: -58%;
+    top: 1%;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -711,5 +728,83 @@ a {
   .good-sides-second__wrapper::before {
     display: none;
   }
+}
+
+.action {
+  background-image: url("../images/rounds-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 102px;
+  padding-bottom: 102px;
+}
+
+.action .container {
+  display: flex;
+  align-items: center;
+}
+
+.action__link {
+  margin-right: 18px;
+}
+
+.action__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #FFFFFF;
+  width: 415px;
+  max-width: 100%;
+}
+
+.app-box {
+  display: flex;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .action {
+    background-image: url("../images/rounds-tablet.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .action .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .action__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .action__link {
+    margin-right: 13px;
+  }
+  .app-box {
+    margin: 0 auto;
+  }
+}
+
+.footer {
+  background: #333A44;
+  padding-top: 35px;
+  padding-bottom: 32px;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer__box {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer__box--link {
+  display: block;
+  margin-right: 24px;
 }
 /*# sourceMappingURL=main.css.map */

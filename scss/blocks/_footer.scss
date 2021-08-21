@@ -1,0 +1,20 @@
+.footer {
+    background: #333A44;
+    padding-top: 35px;
+    padding-bottom: 32px;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__box {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        &--link{
+            display: block;
+            margin-right: 24px;
+        }
+    }
+}
