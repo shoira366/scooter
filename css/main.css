@@ -180,7 +180,7 @@ svg:hover path {
     flex-direction: column;
     position: absolute;
     left: 0px;
-    top: 80px;
+    top: 100px;
     height: 647px;
     padding-left: 32px;
     padding-top: 64px;
@@ -200,6 +200,7 @@ svg:hover path {
   height: 650px;
   padding-top: 153px;
   z-index: 1;
+  margin-top: 100px;
   background-image: url("../images/line.svg"), url("../images/strelka.svg"), url("../images/motorbike.png");
   background-repeat: no-repeat;
   background-size: 203px, 447px 138px, cover;
