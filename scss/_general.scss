@@ -22,3 +22,20 @@ ul {
 a {
     text-decoration: none;
 }
+
+a:hover {
+    color: #FCB72B;
+}
+
+svg:hover path {
+    fill: #E5ECF4;
+}
+.title{
+    clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

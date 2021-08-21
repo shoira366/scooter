@@ -38,6 +38,9 @@
 .btn-intro {
     margin-left: 57px;
 }
+.btn-intro:hover{
+    background: transparent;
+}
 
 @media screen and (max-width:1149px) {
     .intro {

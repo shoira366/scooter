@@ -108,6 +108,10 @@
     right: -18%;
 }
 
+.btn-good-sides:hover {
+    background-color: #fff;
+}
+
 @media screen and (max-width:768px) {
     .good-sides {
         position: relative;
@@ -167,6 +171,7 @@
         width: 180px;
         height: 53px;
     }
+
 
     .good-sides-third {
         margin-bottom: 104px;

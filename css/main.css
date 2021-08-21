@@ -23,6 +23,24 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #FCB72B;
+}
+
+svg:hover path {
+  fill: #E5ECF4;
+}
+
+.title {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .container {
   width: 1106px;
   margin: 0 auto;
@@ -53,6 +71,13 @@ a {
   color: #FFFFFF;
   background: #FCB72B;
   padding: 14px 39px;
+  border: 3px solid transparent;
+}
+
+.btn:hover {
+  border: 3px solid #FCB72B;
+  box-sizing: border-box;
+  color: #FCB72B;
 }
 
 .header {
@@ -61,12 +86,12 @@ a {
   left: 0;
   right: 0;
   z-index: 2;
-  padding-top: 22px;
-  padding-bottom: 21px;
   background: #FFFFFF;
 }
 
 .header__nav {
+  padding-top: 22px;
+  padding-bottom: 21px;
   display: flex;
   align-items: center;
 }
@@ -92,6 +117,13 @@ a {
 .btn-header {
   margin-left: auto;
   max-width: 100%;
+}
+
+.btn-header:hover {
+  background-color: #fff;
+  border: 3px solid #FCB72B;
+  box-sizing: border-box;
+  color: #FCB72B;
 }
 
 .menu-div {
@@ -201,6 +233,10 @@ a {
 
 .btn-intro {
   margin-left: 57px;
+}
+
+.btn-intro:hover {
+  background: transparent;
 }
 
 @media screen and (max-width: 1149px) {
@@ -567,6 +603,10 @@ a {
   position: absolute;
   top: 66%;
   right: -18%;
+}
+
+.btn-good-sides:hover {
+  background-color: #fff;
 }
 
 @media screen and (max-width: 768px) {
