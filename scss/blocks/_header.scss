@@ -1,0 +1,119 @@
+.header {
+    padding-top: 22px;
+    padding-bottom: 21px;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-left: 58px;
+
+        &--item {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            margin-right: 32px;
+        }
+
+        &--link {
+            color: #939CAA;
+        }
+    }
+}
+
+.btn-header {
+    width: 180px;
+    height: 53px;
+    margin-left: auto;
+}
+
+.menu-div {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.checkbox {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.hamburger-menu {
+    display: none;
+    color: #FCB72B;
+}
+
+
+
+@media screen and (max-width:375px) {
+    .header {
+        position: relative;
+        padding-bottom: 24px;
+
+        &__link {
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+            margin-bottom: 315px;
+            align-items: flex-start;
+
+
+            &--item {
+                margin-bottom: 24px;
+                margin-right: 0;
+            }
+
+            &--link {
+                color: #E5ECF4;
+            }
+        }
+    }
+
+    .btn-header {
+        width: 192px;
+        display: block;
+        margin-left: inherit;
+    }
+
+    .menu-div {
+        background-image: linear-gradient(to left,rgba(0,0,0,0.6) 32%, #333A44 32% 100%);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0px;
+        top: 80px;
+        // width: 256px;
+        height: 647px;
+        // background: #333A44;
+        padding-left: 32px;
+        padding-top: 64px;
+        transition: 0.5s;
+        transform: translateX(-368px);
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-right: auto;
+    }
+
+    .checkbox:checked~.menu-div {
+        // display: block;
+        transform: translateX(0px);
+    }
+}
