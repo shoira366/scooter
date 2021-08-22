@@ -148,8 +148,8 @@ svg:hover path {
 
 @media screen and (max-width: 375px) {
   .header {
-    position: relative;
-    padding-bottom: 24px;
+    position: fixed;
+    padding-bottom: 0;
   }
   .header__link {
     display: inline-block;
@@ -180,7 +180,7 @@ svg:hover path {
     flex-direction: column;
     position: absolute;
     left: 0px;
-    top: 100px;
+    top: 75px;
     height: 647px;
     padding-left: 32px;
     padding-top: 64px;
@@ -300,7 +300,7 @@ svg:hover path {
     background-image: url("../images/vector.svg"), url("../images/motorbike-mobile.png");
     background-size: 144px 138px, cover;
     background-position: top 95% left 0;
-    margin-top: 0;
+    margin-top: 75px;
   }
   .intro__title {
     font-size: 40px;

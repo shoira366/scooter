@@ -71,8 +71,9 @@
 
 @media screen and (max-width:375px) {
     .header {
-        position: relative;
-        padding-bottom: 24px;
+        position: fixed;
+        padding-bottom: 0;
+        // padding-bottom: 24px;
 
         &__link {
             display: inline-block;
@@ -110,7 +111,7 @@
         flex-direction: column;
         position: absolute;
         left: 0px;
-        top: 100px;
+        top: 75px;
         height: 647px;
         padding-left: 32px;
         padding-top: 64px;
